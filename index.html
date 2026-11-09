@@ -365,7 +365,6 @@
       </nav>
       <div class="nav-actions">
         <a class="btn btn-sm" href="https://t.me/urtad" target="_blank" title="Telegram">TG <span class="lbl">Telegram</span></a>
-        <a class="btn btn-sm btn-ghost max-link" href="https://max.ru" target="_blank" title="MAX">MAX</a>
       </div>
       <button class="burger" id="burger" aria-label="Меню">☰</button>
     </div>
@@ -381,7 +380,7 @@
       </p>
       <div class="cta-row">
         <a class="btn" href="https://t.me/urtad" target="_blank">Заказать в Telegram</a>
-        <a class="btn btn-ghost max-link" href="https://max.ru" target="_blank">Написать в MAX</a>
+        <a class="btn btn-ghost" href="tel:+79030536646">Позвонить</a>
         <a class="btn btn-ghost" href="#examples">Смотреть примеры</a>
       </div>
       <div class="stats">
@@ -410,7 +409,7 @@
         <div class="card" data-reveal>
           <div class="ico">🔗</div>
           <h3>Кнопки для связи</h3>
-          <p>Telegram, MAX, WhatsApp, звонок или заявка — настраиваю так, чтобы клиенту было проще всего до вас добраться.</p>
+          <p>Telegram, WhatsApp, звонок или заявка — настраиваю так, чтобы клиенту было проще всего до вас добраться.</p>
         </div>
         <div class="card" data-reveal>
           <div class="ico">✍️</div>
@@ -506,7 +505,7 @@
           <ul>
             <li>Свой цвет и стиль</li>
             <li>3–5 блоков</li>
-            <li>Кнопки Telegram / MAX / звонок</li>
+            <li>Кнопки Telegram / WhatsApp / звонок</li>
             <li>Помощь с текстом</li>
             <li>Публикация и ссылка</li>
             <li>Срок: 2 дня</li>
@@ -522,7 +521,7 @@
       <h2 data-reveal>Как проходит работа</h2>
       <p class="sub" data-reveal>Максимально просто — от первого сообщения до готовой ссылки.</p>
       <div class="grid g3">
-        <div class="step" data-reveal><b>1</b><div><h3>Обсуждаем задачу</h3><p>Вы пишете в Telegram или MAX, что за бизнес и что должно быть на сайте.</p></div></div>
+        <div class="step" data-reveal><b>1</b><div><h3>Обсуждаем задачу</h3><p>Вы пишете в Telegram, что за бизнес и что должно быть на сайте.</p></div></div>
         <div class="step" data-reveal><b>2</b><div><h3>Присылаю макет</h3><p>Показываю, как будет выглядеть. Согласовываем цвета и блоки.</p></div></div>
         <div class="step" data-reveal><b>3</b><div><h3>Собираю сайт</h3><p>Делаю страницу, наполняю текстом и фото, проверяю на телефоне.</p></div></div>
         <div class="step" data-reveal><b>4</b><div><h3>Отдаю ссылку</h3><p>Публикую сайт и передаю готовую ссылку. Две правки — бесплатно.</p></div></div>
@@ -538,7 +537,6 @@
         <p class="phone">Телефон: <a href="tel:+79030536646"><b>+7 903 053-66-46</b></a></p>
         <div class="cta-row" style="margin-bottom:0">
           <a class="btn" href="https://t.me/urtad" target="_blank">Telegram</a>
-          <a class="btn btn-ghost max-link" href="https://max.ru" target="_blank">MAX</a>
           <a class="btn btn-ghost" href="tel:+79030536646">Позвонить</a>
         </div>
       </div>
@@ -783,23 +781,6 @@
 </div>
 
 <script>
-  /* ═══════════════════════════════════════════════════════════════
-     ⚠️ ВАЖНО: ССЫЛКА НА MAX
-     ─────────────────────────────────────────────────────────────
-     Ссылка по номеру телефона в MAX НЕ РАБОТАЕТ.
-     Тебе нужна ЛИЧНАЯ ссылка из приложения MAX:
-       1. Открой MAX на телефоне
-       2. Профиль → «Пригласить» / «Поделиться»
-       3. «Скопировать ссылку»
-       4. Вставь её НИЖЕ вместо https://max.ru
-     Пример правильной ссылки:
-       https://max.ru/u/AbCdEf123456
-     ═══════════════════════════════════════════════════════════════ */
-  const MAX_LINK = 'https://max.ru';
-
-  /* Подставляем ссылку во все кнопки .max-link */
-  document.querySelectorAll('.max-link').forEach(el => el.href = MAX_LINK);
-
   /* ================= РОУТЕР ================= */
   const pages = document.querySelectorAll('.page');
 
