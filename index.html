@@ -171,6 +171,7 @@
   #page-home .contact-box p{color:var(--muted);max-width:520px;margin:0 auto 20px}
   #page-home .contact-box .phone{color:var(--muted);font-size:14px;margin-bottom:26px}
   #page-home .contact-box .phone b{color:var(--txt)}
+  #page-home .contact-box .phone a{color:var(--acc)}
 
   #page-home footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
   #page-home .foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
@@ -364,7 +365,7 @@
       </nav>
       <div class="nav-actions">
         <a class="btn btn-sm" href="https://t.me/urtad" target="_blank" title="Telegram">TG <span class="lbl">Telegram</span></a>
-        <a class="btn btn-sm btn-ghost" href="https://max.ru/+79030536646" target="_blank" title="MAX">MAX</a>
+        <a class="btn btn-sm btn-ghost max-link" href="https://max.ru" target="_blank" title="MAX">MAX</a>
       </div>
       <button class="burger" id="burger" aria-label="Меню">☰</button>
     </div>
@@ -380,7 +381,7 @@
       </p>
       <div class="cta-row">
         <a class="btn" href="https://t.me/urtad" target="_blank">Заказать в Telegram</a>
-        <a class="btn btn-ghost" href="https://max.ru/+79030536646" target="_blank">Написать в MAX</a>
+        <a class="btn btn-ghost max-link" href="https://max.ru" target="_blank">Написать в MAX</a>
         <a class="btn btn-ghost" href="#examples">Смотреть примеры</a>
       </div>
       <div class="stats">
@@ -534,10 +535,11 @@
       <div class="contact-box" data-reveal>
         <h2>Нужен сайт? Напишите</h2>
         <p>Отвечаю в течение пары часов. Расскажите про задачу — предложу вариант и назову точную цену.</p>
-        <p class="phone">Телефон / MAX: <b>+7 903 053-66-46</b></p>
+        <p class="phone">Телефон: <a href="tel:+79030536646"><b>+7 903 053-66-46</b></a></p>
         <div class="cta-row" style="margin-bottom:0">
           <a class="btn" href="https://t.me/urtad" target="_blank">Telegram</a>
-          <a class="btn btn-ghost" href="https://max.ru/+79030536646" target="_blank">MAX</a>
+          <a class="btn btn-ghost max-link" href="https://max.ru" target="_blank">MAX</a>
+          <a class="btn btn-ghost" href="tel:+79030536646">Позвонить</a>
         </div>
       </div>
     </div>
@@ -546,7 +548,7 @@
   <footer>
     <div class="wrap foot-in">
       <span>© <span id="year"></span> urtad — одностраничные сайты</span>
-      <span>+7 903 053-66-46</span>
+      <span><a href="tel:+79030536646">+7 903 053-66-46</a></span>
     </div>
   </footer>
 
@@ -781,6 +783,23 @@
 </div>
 
 <script>
+  /* ═══════════════════════════════════════════════════════════════
+     ⚠️ ВАЖНО: ССЫЛКА НА MAX
+     ─────────────────────────────────────────────────────────────
+     Ссылка по номеру телефона в MAX НЕ РАБОТАЕТ.
+     Тебе нужна ЛИЧНАЯ ссылка из приложения MAX:
+       1. Открой MAX на телефоне
+       2. Профиль → «Пригласить» / «Поделиться»
+       3. «Скопировать ссылку»
+       4. Вставь её НИЖЕ вместо https://max.ru
+     Пример правильной ссылки:
+       https://max.ru/u/AbCdEf123456
+     ═══════════════════════════════════════════════════════════════ */
+  const MAX_LINK = 'https://max.ru';
+
+  /* Подставляем ссылку во все кнопки .max-link */
+  document.querySelectorAll('.max-link').forEach(el => el.href = MAX_LINK);
+
   /* ================= РОУТЕР ================= */
   const pages = document.querySelectorAll('.page');
 
